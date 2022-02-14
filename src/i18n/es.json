@@ -1,0 +1,173 @@
+{
+  "error": {
+    "enregistrement de l'utilisateur": "Error al registrar el usuario, inténtelo de nuevo más tarde.",
+    "reessayer": "Ocurrió un error, inténtelo de nuevo más tarde.",
+    "titre": "Por favor agregue un título",
+    "Votre message a bien été envoyé.": "Su mensaje ha sido enviado correctamente.",
+    "Erreur lors de l'envoi de votre message.": "Error al enviar su mensaje.",
+    "Veuillez ajouter un titre à votre récompense": "Agregue un título a su premio",
+    "Aucun rituel disponible dans votre langue": "No hay ritual disponible en tu idioma.",
+    "Un award a déjà été programmé pour cette semaine. Voulez-vous le remplacer ?": "Ya se ha programado un premio para esta semana. ¿Quieres cambiarlo?"
+  },
+  "component": {
+    "Nouveau rituel": "Nuevo ritual",
+    "Titre": "Título",
+    "Modifier un rituel": "Editar un ritual",
+    "prevu": "Planificado para :",
+    "Selectionner une date": "Seleccionar una fecha",
+    "Durée :": "Duración : ",
+    "Commentaire": "Observación",
+    "M'alerter": "Alertame",
+    "min avant": "min antes",
+    "fermer": "Cerrar",
+    "Heure": "Hora :",
+    "Lancer le rituel": "Comienza el ritual",
+    "recurrent": "Cree un ritual recurrente durante las próximas 7 semanas",
+    "Valider le rituel": "Validar los rituales",
+    "Rituel non validé": "Ritual no validado"
+  },
+  "application": {
+    "WhatAward": "¿Qué recompensa para la semana que viene ???",
+    "week": "Semana de ",
+    "categorie": "Categoría:",
+    "next": "Da el siguiente paso",
+    "nextAward": "Tu recompensa para la próxima semana:",
+    "thisAward": "Tu recompensa de la semana:",
+    "obj": " Rituales realizados: ",
+    "rituels validés": "Número de rituales validados",
+    "Catégorie :": "Categoría:",
+    "Hebdo": "Semanalmente",
+    "Mensuel": "Mensual",
+    "QG": "¿Cómo funciona la sede?",
+    "Programmer": "Programa",
+    "Valider": "Validar"
+  },
+  "login": {
+    "error": "Algo salió mal. Vuelve a intentarlo más tarde.",
+    "forgotPassword": "Contraseña olvidada ?",
+    "connexion": "Iniciar sesión",
+    "Un email vous a été envoyé": "Se le ha enviado un correo electrónico",
+    "send": "Enviar"
+  },
+  "register": {
+    "creation": "Crea una cuenta nueva",
+    "email utilisé": "Este correo electrónico ya está en uso, inicie sesión o elija uno diferente.",
+    "error": "Error al registrar el usuario, inténtelo de nuevo más tarde.",
+    "validation compte": "Vaya a su buzón para validar su cuenta.",
+    "error mdp": "Las dos contraseñas no son iguales.",
+    "prenom": "Apellidos",
+    "nom": "Nombre",
+    "email": "Correo electrónico",
+    "mdp": "Contraseña",
+    "confirm mdp": "confirmación de contraseña",
+    "cgu": "Acepto las condiciones generales de uso",
+    "save": "Ahorrar",
+    "name": "Tu nombre :",
+    "Ta date de naissance :": "Tu fecha de nacimiento :",
+    "Ta langue :": "Tu lengua :",
+    "Choisi ton perso :": "Elige tu nombre de usuario :",
+    "cguAccept": "Acepte las condiciones generales de uso."
+  },
+
+  "desktopComponent": {
+    "lundi": "lunes",
+    "mardi": "martes",
+    "mercredi": "miércoles",
+    "jeudi": "jueves",
+    "vendredi": "viernes",
+    "samedi": "sábado",
+    "dimanche": "domingo"
+  },
+
+  "desktopError": {
+    "noMail": "Tu correo electrónico está vacío",
+    "noMessage": "error. Por favor complete su correo electrónico y su mensaje.",
+    "modifmdp": "Contraseña cambiada con éxito",
+    "noEgal": "Sus contraseñas no son idénticas"
+  },
+
+  "desktopLogin": {
+    "mail": "Por favor, introduzca su dirección de correo electrónico",
+    "nom": "Tu apellido",
+    "prenom": "Vuestro nombre",
+    "yourmail": "Su email",
+    "mdp": "su contraseña",
+    "message": "vuestro mensaje",
+    "modifmdp": "Cambiando tu contraseña",
+    "newmdp": "Tu nueva contraseña:",
+    "repeatmdp": "Repite tu nueva contraseña:",
+    "login": "Acceso:",
+    "notYet": "No eres miembro todavía ?",
+    "register": " Inscribirse",
+    "forgot": "contraseña olvidada"
+  },
+
+  "desktopRegister": {
+    "already": "Este correo electrónico ya está en uso, inicie sesión o elija otro.",
+    "rdv": "Vaya a su casilla de correo para validar su cuenta.",
+    "error": "Error al guardar el usuario, inténtalo de nuevo más tarde.",
+    "errorMdp": "Las dos contraseñas no son idénticas.",
+    "create": "Crear una cuenta :",
+    "confirmmdp": "Confirmar la contraseña",
+    "accepte": "Acepto las condiciones generales de uso",
+    "validate": "Validación de tu cuenta",
+    "welcome": "Bienvenido a la aplicación 4b",
+    "click": "Para validar su correo electrónico, haga clic",
+    "done": "Su correo electrónico ha sido validado. Ve a la aplicación para iniciar sesión.",
+    "change": "¿Te gustaría cambiar de cuenta?"
+  },
+
+  "header": {
+    "accueil": "bienvenida",
+    "presentation": "Presentación",
+    "pack": "Pack",
+    "qg": "Cuartel general",
+    "compte": "Mi cuenta",
+    "contact": "Contact",
+    "logout": "Desconectarse",
+    "register": "Inscribirse"
+  },
+  "home": {
+    "bonjour": "Buenos dias ",
+    "brain": "4 your Brain !",
+    "art": "El arte de enfocar",
+    "improve": "Usa rituales para mejorar:",
+    "concentration": "Concentración",
+    "motivation": "Motivación",
+    "efficiency": "Eficiencia",
+    "trial": "Comience su prueba gratuita de 7 días aquí",
+    "artConcentration": "El arte de enfocar",
+    "neuro": "Aplicación de Neuro-Educación que permite el mejor aprovechamiento del potencial de nuestro cerebro.",
+    "built": "Rituales construidos con ciclos animados",
+    "possible": "Posibilidad de evolucionar progresivamente para alcanzar altos niveles de concentración y eficiencia",
+    "artMotivation": "El arte de la motivación",
+    "challenge": "Interfaz desafiante (botón rojo) con recompensas y sistema de niveles.",
+    "every": "Nuevo cada mes: métodos actualizados, interfaces gráficas mejoradas, técnicas avanzadas.",
+    "improving": "Mejores resultados escolares, diversión haciendo los deberes y aprendiendo.",
+    "artEff": "El arte de la eficiencia",
+    "method": "Método basado en el poder del Ritual, compartido por los mejores alumnos.",
+    "universal": "Enfoque científico universal para ser efectivo diariamente a largo plazo.",
+    "personal": "Completa herramienta de desarrollo personal que te permite planificar objetivos.",
+    "artSuccess": "El arte del éxito",
+    "accessible": "Herramienta familiar accesible a todos (adaptada a cada uno según su edad y preferencias), cada miembro de la familia puede crear su perfil, acceder a su propio calendario y estadísticas.",
+    "organ": "Nuestro cerebro, un órgano fundamental con capacidades extraordinarias.",
+    "change": "Cambiar cuenta",
+    "team": "Un equipo de expertos en neuropedagogía, a la vanguardia de los últimos descubrimientos científicos relacionados con el funcionamiento del cerebro."
+  },
+  "pack": {
+    "explication": "Operación y explicación 4B Común",
+    "modif": "Editar este bloque",
+    "mois": " /mes"
+  },
+
+  "desktopAccount": {
+    "welcome": "Bienvenido a tu cuenta 4b Premium.",
+    "choose": "Has elegido el paquete",
+    "info": "Ver mi información de pago",
+    "notYet": "Aún no has elegido tu pack",
+    "change": "¿Quieres cambiar de paquete?",
+    "thisOne": " Elige este paquete",
+    "moreInfo": "Más información",
+    "changeFor": " Cambiar a este paquete"
+  }
+}
