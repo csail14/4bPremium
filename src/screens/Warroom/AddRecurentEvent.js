@@ -127,8 +127,6 @@ const AddEventComp = (props) => {
 
   return (
     <MainContainer>
-      <Title>{i18n.t("component.recurrent")}</Title>
-
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -147,7 +145,9 @@ const AddEventComp = (props) => {
           style={{ padding: "10px" }}
           onChange={(e) => setTitle(e.currentTarget.value)}
         />
-        <div style={{ display: "flex", margin: "20px" }}>
+        <div
+          style={{ display: "flex", margin: "20px", alignItems: "baseline" }}
+        >
           <p style={{ display: "flex", marginRight: "10px" }}>
             {" "}
             {i18n.t("application.categorie")}
@@ -165,7 +165,9 @@ const AddEventComp = (props) => {
           </select>
         </div>
 
-        <div style={{ display: "flex", margin: "20px" }}>
+        <div
+          style={{ display: "flex", margin: "10px", alignItems: "baseline" }}
+        >
           <p style={{ display: "flex", marginRight: "10px" }}>Jour : </p>
           <select onChange={(e) => setDaySelected(e.currentTarget.value)}>
             <option value={1}> {i18n.t("desktopComponent.lundi")}</option>;
@@ -177,7 +179,7 @@ const AddEventComp = (props) => {
             <option value={0}>{i18n.t("desktopComponent.dimanche")}</option>;
           </select>
 
-          <p style={{ display: "flex", marginLeft: "10px" }}>
+          <p style={{ display: "flex", margin: "0 10px" }}>
             {" "}
             {i18n.t("component.Heure")}{" "}
           </p>
@@ -187,7 +189,9 @@ const AddEventComp = (props) => {
             })}
           </select>
         </div>
-        <div style={{ display: "flex", margin: "20px" }}>
+        <div
+          style={{ display: "flex", margin: "20px", alignItems: "baseline" }}
+        >
           <p style={{ display: "flex", marginRight: "10px" }}>
             {" "}
             {i18n.t("component.Durée :")}
@@ -212,8 +216,9 @@ const AddEventComp = (props) => {
               display: "flex",
               flexDirection: "row",
               justifyContent: "center",
+              alignItems: "baseline",
               flexWrap: "wrap",
-              marginTop: "5px",
+              marginTop: "10px",
             }}
           >
             <p> {i18n.t("component.M'alerter")} </p>

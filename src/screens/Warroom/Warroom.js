@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { ReactAgenda, ReactAgendaCtrl, guid, Modal } from "react-agenda";
-import moment from "moment";
+import { ReactAgenda } from "react-agenda";
+import Modal from "react-bootstrap/Modal";
 import "react-agenda/build/styles.css";
 import "react-datetime/css/react-datetime.css";
 import { connect } from "react-redux";
@@ -10,7 +10,6 @@ import styled from "styled-components";
 import AddEvent from "./AddEvent";
 import EditEvent from "./EditEvent";
 import AddRecurentEvent from "./AddRecurentEvent";
-import { isMobile } from "react-device-detect";
 import { buildI18n } from "../../i18n/index";
 
 require("moment/locale/fr.js");
@@ -209,16 +208,25 @@ const Warroom = (props) => {
         >
           {i18n.t("home.change")}
         </Text>
-        {showModal && (
-          <Modal
-            style={{ backgroundColor: "red" }}
-            clickOutside={() => {
-              setEventPopUp(false);
-              setEditeventPopUp(false);
-              setRecurrentEventPopUp(false);
-              setShowModal(false);
-            }}
-          >
+        <Modal
+          show={showModal}
+          onHide={() => {
+            setEventPopUp(false);
+            setEditeventPopUp(false);
+            setRecurrentEventPopUp(false);
+            setShowModal(false);
+          }}
+        >
+          <Modal.Header closeButton>
+            <Modal.Title>
+              {recurentEventPopUp
+                ? i18n.t("component.recurrent")
+                : eventPopUp
+                ? i18n.t("component.Nouveau rituel")
+                : i18n.t("component.Modifier un rituel")}
+            </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
             {eventPopUp && (
               <>
                 <AddEvent
@@ -254,8 +262,8 @@ const Warroom = (props) => {
                 event={selectedEvent}
               />
             )}
-          </Modal>
-        )}
+          </Modal.Body>
+        </Modal>
         <div style={{ backgroundColor: "white" }}>
           <ReactAgenda
             minDate={now}

@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components";
-// import { useMediaQuery } from "@chakra-ui/react";
+import { config } from "../../config";
 import { connect } from "react-redux";
+import { getVideo } from "../../api/videoApi";
 import { buildI18n } from "../../i18n/index";
 import { isMobile } from "react-device-detect";
 import { HashLink } from "react-router-hash-link";
 import { Link } from "react-router-dom";
 import ipad from "../../assets/ipad.png";
+import ReactPlayer from "react-player";
 import appStore from "../../assets/apple-app-store-icon.png";
 import androidStore from "../../assets/android-app-store.png";
 import motivation from "../../assets/motivation.png";
@@ -112,8 +114,17 @@ const FreeTrialContainer = styled.div`
 `;
 
 const Home = (props) => {
-  // const xs = useMediaQuery(theme.breakpoints.only("xs"));
-  const i18n = buildI18n("fr");
+  const i18n = buildI18n(props.lang.value);
+  const [videoUrl, setVideoUrl] = useState(null);
+  useEffect(() => {
+    getVideo(741).then((res) => {
+      if (res.status === 200) {
+        setVideoUrl(config.video_url + res.result[0].url);
+      } else {
+        console.log("error", res);
+      }
+    });
+  });
   return (
     <MainContainer>
       <FirstView isMobile={isMobile}>
@@ -242,8 +253,7 @@ const Home = (props) => {
         </ImageContainer>
       </FirstView>
 
-      {/* <FirstView id="presentation">
-        {" "}
+      <FirstView id="presentation">
         <ReactPlayer
           className="react-player"
           url={videoUrl}
@@ -252,7 +262,7 @@ const Home = (props) => {
           width="65%"
           height="50%"
         />
-      </FirstView> */}
+      </FirstView>
 
       <SecondView id="concentration">
         <ViewTitle> {i18n.t("home.artConcentration")}</ViewTitle>
@@ -343,66 +353,6 @@ const Home = (props) => {
           </TextContainer>
         </BodyView>
       </SecondView>
-
-      {/* {!isMobile && (
-        <Link style={{ textDecoration: "none", color: "black" }} to="/warroom">
-          <GoToQG isMobile={isMobile}> QG</GoToQG>
-        </Link>
-      )} */}
-      {/* 
-      <button
-        style={{
-          margin: 5,
-          padding: 0,
-          borderRadius: "12px",
-
-          borderColor: "white",
-        }}
-        onClick={() =>
-          window.open(
-            "https://apps.apple.com/us/app/4bpremium/id1571508135?itsct=apps_box_link&itscg=30200",
-            "_blank" // <- This is what makes it open in a new window.
-          )
-        }
-      >
-        <img
-          style={{
-            margin: 0,
-            padding: 0,
-            borderRadius: "12px",
-            maxWidth: "200px",
-            cursor: "pointer",
-          }}
-          src={appStore}
-        />
-      </button> */}
-
-      {/* <button
-        style={{
-          margin: 5,
-          padding: 0,
-          borderRadius: "12px",
-
-          borderColor: "white",
-        }}
-        onClick={() =>
-          window.open(
-            "https://play.google.com/store/apps/details?id=com.premium4b.app",
-            "_blank" // <- This is what makes it open in a new window.
-          )
-        }
-      >
-        <img
-          style={{
-            margin: 0,
-            padding: 0,
-            borderRadius: "12px",
-            height: "58px",
-            cursor: "pointer",
-          }}
-          src={androidStore}
-        />
-      </button> */}
     </MainContainer>
   );
 };
@@ -410,7 +360,7 @@ const Home = (props) => {
 const mapDispatchToProps = {};
 
 const mapStateToProps = (store) => {
-  return {};
+  return { lang: store.lang };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

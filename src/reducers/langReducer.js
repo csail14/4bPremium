@@ -1,7 +1,7 @@
 import { LOAD_LANG } from "../actions/lang/actions-type";
 
 const initialState = {
-  value: "en",
+  value: null,
 };
 
 const LangReducer = (state = initialState, action) => {

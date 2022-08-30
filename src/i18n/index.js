@@ -5,7 +5,6 @@ import es from "./es.json";
 
 export const buildI18n = (selectedLang = null) => {
   const navigatorLang = window.navigator.language.substr(0, 2).toLowerCase();
-
   i18n.translations = {
     en: en,
     fr: fr,

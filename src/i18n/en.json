@@ -20,7 +20,7 @@
     "M'alerter": "Alert me",
     "min avant": "minutes before",
     "fermer": "Close",
-    "Heure": "Hour:",
+    "Heure": "Hour: ",
     "Lancer le rituel": "Start the ritual",
     "recurrent": "Create a recurring ritual over the next 7 weeks",
     "Valider le rituel": "Validate the ritual",
@@ -122,6 +122,7 @@
     "presentation": "Presentation",
     "pack": "Pack",
     "qg": "Headquarter",
+    "login": "Login",
     "compte": "My account",
     "contact": "Contact",
     "logout": "Sign out",
@@ -135,7 +136,7 @@
     "concentration": "Concentration",
     "motivation": "Motivation",
     "efficiency": "Efficiency",
-    "trial": "Start your 7 day free trial here",
+    "trial": "Start your free trial here",
     "artConcentration": "The Art of concentration",
     "neuro": "Neuro-Education application allowing the best use of the potentiel of our brain.",
     "built": "Rituals built with animated cycles",
@@ -169,5 +170,11 @@
     "thisOne": " Choose this pack",
     "moreInfo": "More information",
     "changeFor": " Change to this pack"
+  },
+
+  "text": {
+    "family": "<p><p>Detail of the 9 planets of the 4BPremium universe:</p><p>The brain is a formidable tool capable of performing very complex tasks, provided that it is stimulated on a daily basis. For this, the 4B Premium app is designed to stimulate your brain on a daily basis. Like any structure, the brain is divided into several interconnected areas, each with one or more specific functions. In order to respect this organization, the 4B Premium universe is made up of 9 planets:</p><ol type=‘1’><li>Planet School: Mainly dedicated to children in Kindergarten and primary school, this planet allows children to acquire Concentration and method in a systematic way</li><li>Planet Studies: Planet dedicated to students from college, through high school, higher education and the professional world. Mainly allows you to optimize your motivation and to acquire and validate the method of concentration</li><li>Planet Reading: Planet dedicated to “intellectual activities” in general, such as intensive reading, a fun activity (chess-type game, GO game, etc.)</li><li>Planet Arts/Music: Artistic and/or musical activity practiced intensely</li><li>Planet Indoor Home: Being well at home means being well in your head = to optimize your concentration you have to evolve in a clean and tidy place. Storage, decoration, DIY at home are among the ingredients of good mental health</li><li>Planet Outdoor Home: For those who are lucky enough to have a garden, in the same way as for the planet Indoor Home, a well-maintained garden allows you to optimize your cognitive faculties.</li><li>Planet Lifestyle: Healthy and varied food, balanced dishes, take the time to cook and select your dishes</li><li>Planet Indoor Sport: regular sports activity significantly improves brain capacity over the long term</li><li>Planet Outdoor Sport: regular sports activity significantly improves brain capacity over the long term</li></ol> ",
+    "kids": "<p></p><p>Goal: significantly improve children&#39;s concentration in their daily activities. Application based on the power of the Ritual</p><ol type=‘1’><li>Motivation = Questioning during rituals to maintain the level of concentration and allow parents/guardians to check the assimilation of the lesson. Time management by the children (duration of the ritual, breaks during the ritual)</li><li>Motivation = Construction of rituals designed to motivate children to take the next step through the follow-up of a mission</li><li>Motivation = Construction of rituals designed to motivate children to take the next step through the follow-up of a mission</li></ol>",
+    "commun": "<p>Goal: significantly and sustainably improve your brain capacity and therefore your daily health. Complete application based on the power of the Ritual across 9 universes. These universes are as follows: School, Studies, Reading, Arts and Music, Indoor home, Outdoor home, Lifestyle, Indoor sport, Outdoor sport.</p><p>Cognitive capacities articulated around the following major levers:</p><ol type=‘1’><li>Method = Application of the latest scientific discoveries related to the capacities of the brain Application of the methods used by the best students of the High Schools, as well as the best professionals for each planet. Chronology respecting the rhythm of the users, according to their cerebral concentration capacity, durations adapted cycles. All cycles are built on the same model<br/></li><li>SMS notification system<br/></li><li>Motivation = Interface designed to be pleasant and stimulating. Challenge application with system of rewards and reaching higher levels<br/></li><li>Concentration = Power of the ritual allows you to gradually gain concentration. Construction of rituals designed to ‘rise’ in concentration at each stage. Use of cognitive methods (playing on the senses of children) to gradually immerse yourself in a great state of concentration<br/></li><li>Results = The strength of the ritual allows a significant and progressive improvement of the cerebral capacities of the users. The integration of scientific methods into the cycles improves its results. In addition, following the ritual optimizes lifetime effectiveness, allowing you to acquire the method.<br/></li><li>Efficiency = Rituals are designed for efficient work, i.e. the user, during his concentration phase, will be 100% focused on his work. In addition, the ‘intelligent calendar’ structure of the rituals will allow you to retain your work over the long term.<br/></li><li>The power of the Ritual = Daily pleasure for users, the desire to learn and retain lessons, a method and rigor for life<br/></li><li>An interaction = use of modern tools through an application, that is to say an intelligent use of a screen, the user appropriates the best cerebral techniques thanks to a smartphone or a tablet.<br/></li><li>An interface = use of an animated interface to motivate users</li></ol>"
   }
 }

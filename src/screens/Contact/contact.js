@@ -13,7 +13,7 @@ const Contact = (props) => {
   const [message, setMessage] = useState("");
   const [error, setError] = useState("");
 
-  const i18n = buildI18n("fr");
+  const i18n = buildI18n(props.lang.value);
 
   const onSubmitForm = () => {
     let data = {
@@ -112,7 +112,7 @@ const Contact = (props) => {
 const mapDispatchToProps = {};
 
 const mapStateToProps = (store) => {
-  return {};
+  return { lang: store.lang };
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Contact);

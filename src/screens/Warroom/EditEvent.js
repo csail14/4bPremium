@@ -84,7 +84,6 @@ const EditEventComp = (props) => {
 
   return (
     <MainContainer>
-      <Title> {i18n.t("component.Modifier un rituel")}</Title>
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -100,7 +99,9 @@ const EditEventComp = (props) => {
           style={{ padding: "10px" }}
           onChange={(e) => setTitle(e.currentTarget.value)}
         />
-        <div style={{ display: "flex", margin: "20px" }}>
+        <div
+          style={{ display: "flex", margin: "20px", alignItems: "baseline" }}
+        >
           <p style={{ display: "flex", marginRight: "10px" }}>
             {" "}
             {i18n.t("application.categorie")}
@@ -130,7 +131,9 @@ const EditEventComp = (props) => {
             shrink: true,
           }}
         />
-        <div style={{ display: "flex", margin: "20px" }}>
+        <div
+          style={{ display: "flex", margin: "20px", alignItems: "baseline" }}
+        >
           <p style={{ display: "flex", marginRight: "10px" }}>
             {" "}
             {i18n.t("component.Durée :")}
@@ -157,6 +160,7 @@ const EditEventComp = (props) => {
               display: "flex",
               flexDirection: "row",
               justifyContent: "center",
+              alignItems: "baseline",
               flexWrap: "wrap",
               marginTop: "5px",
             }}

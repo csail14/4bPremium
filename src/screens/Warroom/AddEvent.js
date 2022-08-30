@@ -23,7 +23,9 @@ const MainContainer = styled.div`
 const AddEventComp = (props) => {
   const [title, setTitle] = useState("");
   const [comment, setComment] = useState("");
-  const [catSelected, setCatSelected] = useState(props.theme.allTheme[0].id);
+  const [catSelected, setCatSelected] = useState(
+    props.theme && props.theme.allTheme && props.theme.allTheme[0].id
+  );
   const [value, onChange] = useState(new Date(props.date));
   const [errorMessage, setErrorMessage] = useState("");
   const [duration, setDuration] = useState(20);
@@ -75,7 +77,6 @@ const AddEventComp = (props) => {
   };
   return (
     <MainContainer>
-      <Title> {i18n.t("component.Nouveau rituel")}</Title>
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -90,7 +91,9 @@ const AddEventComp = (props) => {
           style={{ padding: "10px" }}
           onChange={(e) => setTitle(e.currentTarget.value)}
         />
-        <div style={{ display: "flex", margin: "20px" }}>
+        <div
+          style={{ display: "flex", margin: "20px", alignItems: "baseline" }}
+        >
           <p style={{ display: "flex", marginRight: "10px" }}>
             {i18n.t("application.categorie")}
           </p>
@@ -114,7 +117,9 @@ const AddEventComp = (props) => {
             shrink: true,
           }}
         />
-        <div style={{ display: "flex", margin: "20px" }}>
+        <div
+          style={{ display: "flex", margin: "20px", alignItems: "baseline" }}
+        >
           <p style={{ display: "flex", marginRight: "10px" }}>
             {" "}
             {i18n.t("component.Durée :")}
@@ -133,13 +138,14 @@ const AddEventComp = (props) => {
           name="name"
           onChange={(e) => setComment(e.currentTarget.value)}
         />
-        {props.user.infos.notification == 1 && (
+        {props.user && props.user.infos && props.user.infos.notification == 1 && (
           <div
             style={{
               display: "flex",
               flexDirection: "row",
               justifyContent: "center",
               flexWrap: "wrap",
+              alignItems: "baseline",
               marginTop: "5px",
             }}
           >
